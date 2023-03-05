@@ -30,7 +30,13 @@ public class regen extends JFrame{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            System.out.print("ok");
+            dispose();
+            rigistr rigistr = new rigistr();
+            rigistr.pack();
+            rigistr.setDefaultCloseOperation(rigistr.HIDE_ON_CLOSE);
+            rigistr.setVisible(true);
+            rigistr.setSize(400,400);
+            rigistr.setLocationRelativeTo(null);
         }
     }
 }
