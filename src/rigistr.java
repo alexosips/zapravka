@@ -26,14 +26,18 @@ public class rigistr extends JFrame{
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            System.exit(0);
+            if (textField3.getText() != textField4.getText()){
+                labeleroor.setVisible(true);
+                panel.updateUI();
+            }
+
         }
     }
     private class MyButtn implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-           System.out.print("ok");
+            System.exit(0);
         }
     }
 }
